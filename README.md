@@ -15,7 +15,7 @@
 - Node.js
 - HTML5
 - CSS/SCSS
-- Libraries 
+- Libraries (SimpleLightBox, iziToast, Axios, Redux, Lodash, Express, styled-components and others)
 ## LANGUAGES
 - English
 - Ukrainian
