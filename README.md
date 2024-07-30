@@ -17,6 +17,7 @@
 - CSS/SCSS
 - Work with libraries (SimpleLightBox, iziToast, Axios, Redux, Lodash, Express, styled-components and others)
 - Work with bundlers (Vite, Webpack)
+- Git, GitHub Pages
 ## LANGUAGES
 - English (Intermediate)
 - Ukrainian (Native)
