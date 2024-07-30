@@ -107,6 +107,8 @@ footer {
 .section ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  gap: 30px;
 }
 .section h2,
 h4 {
@@ -137,5 +139,8 @@ footer p {
 
   .hero p {
     font-size: 1rem;
+  }
+  .section ul {
+    display: block;
   }
 }
