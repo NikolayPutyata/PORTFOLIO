@@ -26,7 +26,8 @@
 ### [Название ссылки](URL)
 ### [Название ссылки](URL)
 ## PERSONAL PROJECTS
-### [LENDING COMPANY SITE](https://nikolayputyata.github.io/goit-markup-hw-08) (Project Role: Completely self-directed work. HTML and CSS coding from a Figma design, partial work with JavaScript)
+### [LENDING COMPANY SITE](https://nikolayputyata.github.io/goit-markup-hw-08) 
+(Project Role: Completely self-directed work. HTML and CSS coding from a Figma design, partial work with JavaScript)
 ### [Название ссылки](URL)
 ### [Название ссылки](URL)
 ## ABOUT ME
