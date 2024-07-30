@@ -25,7 +25,7 @@
 ### [Название ссылки](URL)
 ### [Название ссылки](URL)
 ## PERSONAL PROJECTS
-### [Название ссылки](URL)
+### [LENDING COMPANY SITE](https://nikolayputyata.github.io/goit-markup-hw-08) (full single work)
 ### [Название ссылки](URL)
 ### [Название ссылки](URL)
 ## ABOUT ME
