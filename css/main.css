@@ -89,7 +89,8 @@ footer {
 
 .project,
 .skill,
-.language {
+.language,
+.education {
   margin-bottom: 1.5rem;
   padding: 1.5rem;
   background: #ecf0f1;
