@@ -101,7 +101,8 @@ footer {
 
 .project:hover,
 .skill:hover,
-.language:hover {
+.language:hover,
+.education:hover {
   transform: translateY(-5px);
 }
 
