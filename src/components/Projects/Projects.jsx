@@ -2,7 +2,7 @@ import s from "./Projects.module.css";
 
 const Projects = () => {
   return (
-    <section className={s.section}>
+    <section className={`${s.section}`}>
       <h2>Projects</h2>
       <div className={s.project}>
         <h3>
@@ -11,7 +11,7 @@ const Projects = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Developer Portfolio
+            Developer&#39;s Portfolio
           </a>
         </h3>
         <p>
