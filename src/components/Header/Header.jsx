@@ -1,7 +1,15 @@
 import s from "./Header.module.css";
 
-const Header = () => {
-  return <header className={s.header}></header>;
+import { TfiAlignRight } from "react-icons/tfi";
+
+const Header = ({ openMenuFu }) => {
+  return (
+    <header className={s.header}>
+      <button className={s.menuButton} onClick={openMenuFu}>
+        <TfiAlignRight className={s.buttonIcon} />
+      </button>
+    </header>
+  );
 };
 
 export default Header;

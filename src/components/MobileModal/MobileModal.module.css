@@ -1,0 +1,89 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  max-width: 300px;
+  background-color: #ffffff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.modal > :first-child {
+  align-self: flex-end;
+}
+
+.modalActive {
+  transform: translateX(0);
+}
+
+.menuList {
+  padding: 40px 20px;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Montserrat", sans-serif; /* Современный и чистый шрифт */
+}
+
+.menuItem {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.menuItem::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 1.7px;
+  background-color: #425a71;
+  transition: width 0.4s ease;
+  transform: translateX(-50%);
+}
+
+.menuItem:hover::before {
+  width: 100%;
+}
+
+.menuItem:hover {
+  color: #111111;
+}
+.closeButton {
+  border: 0px;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+.closeButtonIcon {
+  color: black;
+  width: 20px;
+  height: 20px;
+}
+.closeButtonIcon:hover {
+  color: rgb(91, 91, 91);
+}
+@media (min-width: 768px) {
+  .modal {
+    display: none;
+  }
+}

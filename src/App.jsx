@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import Contacts from "./components/Contacts/Contacts";
 import Education from "./components/Education/Education";
 import Footer from "./components/Footer/Footer";
@@ -10,11 +12,26 @@ import Skills from "./components/Skills/Skills";
 import About from "./components/About/About";
 
 import "./App.css";
+import MobileModal from "./components/MobileModal/MobileModal";
 
 const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openMobileMenu = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    document.body.classList.toggle("no-scroll", isOpen);
+  }, [isOpen]);
+
   return (
     <>
-      <Header />
+      <Header openMenuFu={openMobileMenu} />
       <Hero />
       <div className="container">
         <Contacts />
@@ -26,6 +43,7 @@ const App = () => {
         <Education />
       </div>
       <Footer />
+      <MobileModal isOpen={isOpen} closeModal={closeModal} />
     </>
   );
 };
