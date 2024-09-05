@@ -2,7 +2,7 @@ import s from "./Languages.module.css";
 
 const Languages = () => {
   return (
-    <section className={s.section}>
+    <section className={s.section} id="languages">
       <h2>Languages</h2>
       <div className={s.language}>
         <ul>

@@ -41,7 +41,6 @@
   border-radius: 8px;
   background-color: transparent;
   transition: background-color 0.3s ease, color 0.3s ease;
-  cursor: pointer;
   position: relative;
 }
 
@@ -63,6 +62,14 @@
 
 .menuItem:hover {
   color: #111111;
+}
+.menuItem a {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 .closeButton {
   border: 0px;

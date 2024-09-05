@@ -8,13 +8,27 @@ const MobileModal = ({ isOpen, closeModal }) => {
         <TfiClose className={s.closeButtonIcon} />
       </button>
       <ul className={s.menuList}>
-        <li className={s.menuItem}>Contacts</li>
-        <li className={s.menuItem}>Skills</li>
-        <li className={s.menuItem}>Projects</li>
-        <li className={s.menuItem}>Mini Works</li>
-        <li className={s.menuItem}>About Me</li>
-        <li className={s.menuItem}>Languages</li>
-        <li className={s.menuItem}>Education</li>
+        <li className={s.menuItem}>
+          <a href="#contacts">Contacts</a>
+        </li>
+        <li className={s.menuItem}>
+          <a href="#skills">Skills</a>
+        </li>
+        <li className={s.menuItem}>
+          <a href="#projects">Projects</a>
+        </li>
+        <li className={s.menuItem}>
+          <a href="#mini-works">Mini Works</a>
+        </li>
+        <li className={s.menuItem}>
+          <a href="#about">About Me</a>
+        </li>
+        <li className={s.menuItem}>
+          <a href="#languages">Languages</a>
+        </li>
+        <li className={s.menuItem}>
+          <a href="#education">Education</a>
+        </li>
       </ul>
     </div>
   );

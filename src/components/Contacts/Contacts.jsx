@@ -2,7 +2,7 @@ import s from "./Contacts.module.css";
 
 const Contacts = () => {
   return (
-    <section className={s.section}>
+    <section className={s.section} id="contacts">
       <h2>Personal Information</h2>
       <p className={s.specialDescription}>
         Email:{" "}

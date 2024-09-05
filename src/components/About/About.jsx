@@ -3,7 +3,7 @@ import s from "./About.module.css";
 const About = () => {
   return (
     <div>
-      <section className={s.section}>
+      <section className={s.section} id="about">
         <h2>About Me</h2>
         <p className={s.specialDescription}>
           I&#39;m Mykola Putyata, a passionate Fullstack Developer based in

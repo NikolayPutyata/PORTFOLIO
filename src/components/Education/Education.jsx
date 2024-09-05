@@ -2,7 +2,7 @@ import s from "./Education.module.css";
 
 const Education = () => {
   return (
-    <section className={s.section}>
+    <section className={s.section} id="education">
       <h2>Education</h2>
       <div className={s.education}>
         <ul>

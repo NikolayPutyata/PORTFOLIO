@@ -2,7 +2,7 @@ import s from "./Projects.module.css";
 
 const Projects = () => {
   return (
-    <section className={`${s.section}`}>
+    <section className={`${s.section}`} id="projects">
       <h2>Projects</h2>
       <div className={s.project}>
         <h3>

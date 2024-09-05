@@ -2,7 +2,7 @@ import s from "./Skills.module.css";
 
 const Skills = () => {
   return (
-    <section className={s.section}>
+    <section className={s.section} id="skills">
       <h2>Skills</h2>
       <div className={s.skill}>
         <h3>Hard Skills</h3>

@@ -2,7 +2,7 @@ import s from "./MiniWorks.module.css";
 
 const MiniWorks = () => {
   return (
-    <section className={s.section}>
+    <section className={s.section} id="mini-works">
       <h2>Mini Single Works</h2>
       <div className={s.project}>
         <h3>
