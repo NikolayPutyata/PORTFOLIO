@@ -63,7 +63,7 @@
 .menuItem:hover {
   color: #111111;
 }
-.menuItem a {
+.menuList a {
   text-decoration: none;
   color: inherit;
   background: none;

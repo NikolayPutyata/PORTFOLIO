@@ -1,5 +1,6 @@
 import s from "./MobileModal.module.css";
 import { TfiClose } from "react-icons/tfi";
+import ModalItem from "./ModalItem";
 
 const MobileModal = ({ isOpen, closeModal }) => {
   return (
@@ -8,27 +9,27 @@ const MobileModal = ({ isOpen, closeModal }) => {
         <TfiClose className={s.closeButtonIcon} />
       </button>
       <ul className={s.menuList}>
-        <li className={s.menuItem}>
-          <a href="#contacts">Contacts</a>
-        </li>
-        <li className={s.menuItem}>
-          <a href="#skills">Skills</a>
-        </li>
-        <li className={s.menuItem}>
-          <a href="#projects">Projects</a>
-        </li>
-        <li className={s.menuItem}>
-          <a href="#mini-works">Mini Works</a>
-        </li>
-        <li className={s.menuItem}>
-          <a href="#about">About Me</a>
-        </li>
-        <li className={s.menuItem}>
-          <a href="#languages">Languages</a>
-        </li>
-        <li className={s.menuItem}>
-          <a href="#education">Education</a>
-        </li>
+        <ModalItem link="#contacts" closeFu={closeModal}>
+          Contacts
+        </ModalItem>
+        <ModalItem link="#skills" closeFu={closeModal}>
+          Skills
+        </ModalItem>
+        <ModalItem link="#projects" closeFu={closeModal}>
+          Projects
+        </ModalItem>
+        <ModalItem link="#mini-works" closeFu={closeModal}>
+          Mini Works
+        </ModalItem>
+        <ModalItem link="#about" closeFu={closeModal}>
+          About Me
+        </ModalItem>
+        <ModalItem link="#languages" closeFu={closeModal}>
+          Languages
+        </ModalItem>
+        <ModalItem link="#education" closeFu={closeModal}>
+          Education
+        </ModalItem>
       </ul>
     </div>
   );
