@@ -13,7 +13,7 @@
 }
 
 .menuButton {
-  border: 0px;
+  border: 1px;
   background-color: transparent;
   cursor: pointer;
   color: white;
