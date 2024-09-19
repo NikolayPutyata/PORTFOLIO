@@ -1,42 +1,8 @@
-import { useEffect, useRef, useState } from "react";
 import s from "./Contacts.module.css";
 
 const Contacts = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const currentRef = sectionRef.current;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entry.target);
-        }
-      },
-      {
-        threshold: 0.2,
-      }
-    );
-
-    if (currentRef) {
-      observer.observe(currentRef);
-    }
-
-    return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef);
-      }
-    };
-  }, []);
-
   return (
-    <section
-      className={`${s.section} ${isVisible ? s.loaded : ""}`}
-      id="contacts"
-      ref={sectionRef}
-    >
+    <section className={s.section} id="contacts">
       <h2>Personal Information</h2>
       <p className={s.specialDescription}>
         Email:{" "}
