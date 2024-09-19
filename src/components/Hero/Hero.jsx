@@ -1,8 +1,19 @@
+import { useEffect, useState } from "react";
 import s from "./Hero.module.css";
 
 const Hero = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 800);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <section className={s.hero}>
+    <section className={`${s.hero} ${isLoaded ? s.loaded : ""}`}>
       <div className={s.container}>
         <div className={s.profile}>
           <picture>
