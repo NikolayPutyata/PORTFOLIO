@@ -17,9 +17,6 @@
 
 .hero p {
   font-size: 1.2rem;
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 .hero img {
@@ -43,19 +40,10 @@
   height: 1.5px;
   background: #fff;
   margin: 1.5rem 0;
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 .hero .contacts {
   text-align: center;
-}
-
-.hero.loaded .divider,
-.hero.loaded p {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 @media (max-width: 768px) {

@@ -1,44 +1,8 @@
-import { useEffect, useRef } from "react";
 import s from "./Skills.module.css";
 
 const Skills = () => {
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    const skillItems = section.querySelectorAll("li");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            skillItems.forEach((item, index) => {
-              setTimeout(() => {
-                item.classList.add(s.visible);
-              }, index * 500);
-            });
-          }
-        });
-      },
-      {
-        root: null,
-        threshold: 0.2,
-      }
-    );
-
-    if (section) {
-      observer.observe(section);
-    }
-
-    return () => {
-      if (section) {
-        observer.unobserve(section);
-      }
-    };
-  }, []);
-
   return (
-    <section className={s.section} id="skills" ref={sectionRef}>
+    <section className={s.section} id="skills">
       <h2>Skills</h2>
       <div className={s.skill}>
         <ul className={s.skillsUl}>
